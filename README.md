@@ -23,8 +23,8 @@ This project provides a set of Python scripts for handling compressed archives (
    - The content is extracted into a folder named after the archive, without needing manual intervention.
 
 3. **`merger.py`**
-   - This script processes the `EXTRACTED` folder created by the `extracter.py` script, looks for all `.java` files, and merges them into a new directory called `PROCESSED`.
-   - Each `.java` file is renamed based on its source folder to avoid name conflicts.
+   - This script processes the `EXTRACTED` folder created by the `extracter.py` and `nested_zip_remover.py` scripts, looks for all `.java` files, and merges them into a new directory called `PROCESSED`.
+   - Each `.java` file is renamed based on its source folder to avoid name conflicts generally created due to multiple turn-ins.
    - It handles multiple variations of the same submission by merging them into a common folder based on the base name.
 
 ### Usage
@@ -85,7 +85,3 @@ After running the scripts, the directory structure will look like this:
     │   └── <BaseName2___FileName.java>
     └── ...
 ```
-
-### License
-
-This project is licensed under the MIT License.
